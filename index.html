@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+
+<head>
+  <meta charset="utf-8">
+  <title>Karolina Margielewicz | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Witaj w moim portfolio!"/>
+  <meta name="keywords" content="portfolio,css,html,javascript,python,cv,bootstrap,personal website"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="https://img.icons8.com/bubbles/50/000000/monitor.png">
+  
+  
+  <!-- Bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+  <!---Font Awesome-->
+  <script src="https://kit.fontawesome.com/48e1650691.js" crossorigin="anonymous"></script>
+  <!---Google Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	
+  <script src="jquery.scrollTo.min.js"></script>
+
+
+  <script>
+		
+		jQuery(function($)
+		{
+			//zresetuj scrolla
+      $.scrollTo(0);
+      
+      $('#1').click(function() { $.scrollTo($('#title'), 1000); });			
+			$('#2').click(function() { $.scrollTo($('#skills'), 1000); });
+			$('#3').click(function() { $.scrollTo($('#webs'), 1000); });
+			$('#4').click(function() { $.scrollTo($('#whoami'), 1000); });
+      $('#5').click(function() { $.scrollTo($('#contact'), 1000); });
+      $('.trans-but').click(function() { $.scrollTo($('#whoami'), 1000); });
+	
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+		}
+		);
+		
+		//pokaż podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();		
+		}
+		);
+	
+	
+	</script>
+</head>
+
+<body>
+
+    <!---Navigator-->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+            <div class="container-fluid navbar">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" aria-current="page" href="#" id="1"><i class="fas fa-home"></i></a>
+                  <a class="nav-link" href="#skills"id="2"><i class="fas fa-code"></i></a>
+                  <a class="nav-link" href="#webs"id="3"><i class="fas fa-laptop-code"></i></a>
+                  <a class="nav-link" href="#whoami"id="4"><i class="fas fa-heart"></i></a>
+                  <a class="nav-link" href="#contact"id="5"><i class="fas fa-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+   
+    
+    <!---Title---->
+    <div class="container-fluid title">
+
+        <div class="row">
+        <div class="col-lg-6 text">
+        <h1 id="title">Witam na mojej stronie!</h1>
+        <h6>Karolina Margielewicz| newbie front-end developer</h6>
+        <br><br>
+        <button type="button" href="#whoami" class="trans-but">Zaczynajmy!</button>
+        </div>
+
+        <div class="col-lg-6 img">
+          <img src="images/red.png" width="100%">
+
+      </div>
+
+     
+    </div>
+
+    </div>
+
+     <!---Skills---->
+     <div class="container-fluid skills">
+       <h1 id="skills">Umiejętności</h1>
+        <div class="row">
+         
+          <div class="col-lg-6">
+            <p>
+              <a class="btn btn-outline-dark btn-block" data-toggle="collapse" href="#html" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <i class="fab fa-html5 fa-2x"></i>
+              </a>
+            </p>
+            <div class="collapse" id="html">
+              <div class="card card-body">
+                <p>HTML5 znam bliżej od ponad półtora roku, o ile to możliwe korzystam ze wszystkich aspektów, które oferuje. Zwracam uwagę na SEO oraz prawidłowe korzystanie z tagów.</p> 
+          </div> 
+          </div> 
+      
+            <p>
+              <a class="btn btn-outline-dark btn-block" data-toggle="collapse" href="#css" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <i class="fab fa-css3-alt fa-2x"></i> 
+              </a>
+            </p>
+            <div class="collapse" id="css">
+              <div class="card card-body">
+                <p>Orientuję się w metodologii BEM, o ile to możliwe staram się korzystać z blokowych modułów strony. Umiem tworzyć bazowe animacje CSS. Jestem w trakcie nauki CSS Grid oraz flexbox'a, które 
+                  będę implementować w następnych projektach. </p>
+          </div> 
+          </div>
+
+          <p>
+            <a class="btn btn-outline-dark btn-block" data-toggle="collapse" href="#js" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <i class="fab fa-js fa-2x"></i>
+            </a>
+          </p>
+          <div class="collapse" id="js">
+            <div class="card card-body">
+              <p>Znam podstawy JavaScriptu i potrafię wykonać proste funkcje ubogacające UX strony.</p>
+        </div> 
+        </div>
+          
+          
+
+          </div>
+          
+
+
+          <div class="col-lg-6">
+            <p>
+              <a class="btn btn-outline-dark btn-block" data-toggle="collapse" href="#bootstrap" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <i class="fab fa-bootstrap fa-2x"></i>
+              </a>
+            </p>
+            <div class="collapse" id="bootstrap">
+              <div class="card card-body">
+              <p>Bootstrap jest naprawdę przydatnym frameworkiem. Wykorzystuję go przedewszystkim przy dbaniu o responsywność strony i adaptacji na 
+              różne rozdzielczości.
+              </p>
+          </div> 
+          </div> 
+      
+            <p>
+              <a class="btn btn-outline-dark btn-block" data-toggle="collapse" href="#wordpress" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <i class="fab fa-wordpress fa-2x"></i>
+              </a>
+            </p>
+            <div class="collapse" id="wordpress">
+              <div class="card card-body">
+              Nie mam problemu również i z tworzeniem stron w Wordpressie.
+          </div> 
+          </div>
+
+          <p>
+            <a class="btn btn-outline-dark btn-block" data-toggle="collapse" href="#python" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <i class="fab fa-python fa-2x"></i>
+            </a>
+          </p>
+          <div class="collapse" id="python">
+            <div class="card card-body">
+              <p>Biorę udział w projekcie #100_days_with_code organizowanym przez London App Bewery. JEstem na etapie poznawania coraz to bardziej rozszerzonych funkcji i metod jakie oferuje Python.</p>
+        </div> 
+        </div>
+          
+          
+
+          </div>  
+          <div class="col">
+          <p>
+            <a class="btn btn-outline-dark btn-block" data-toggle="collapse" href="#more" role="button" aria-expanded="false" aria-controls="collapseExample">
+              More
+            </a>
+          </p>
+          <div class="collapse" id="more">
+            <div class="card card-body">
+             <p>Posiadam znajomość angielskiego na poziomie B2. Wiem jak tworzyć nowe repozytoria na Githubie oraz potrafię je pobierać i uruchamiać lokalnie. Od 6 lat zajmuję się również
+              grafiką komputerową, a w szczególności digital paintingiem. Jest to raczej pasja, ale ogólna znajomość i biegłość w programach graficznych z pakietów
+              Adobe jest dość przydatną umiejętnością.
+             </p>
+        </div> 
+        </div>  
+          </div>
+
+     
+
+       </div>
+       </div>
+
+       <!---Webs---->
+       <div class="container-fluid webs">
+          <h1 id="webs">Moje projekty</h1>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          
+          <div class="col">
+            <div class="card">
+              <div class="card-img">
+              <img src="images/huddle.jpg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Huddle</h5>
+                <p class="card-text">Przy tym projekcie poznałam działanie oraz funkcjonalność multimediów w formacie SVG. Był to również mój pierwszy w pełni wykonany samodzielnie projekt.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-img">
+              <img src="images/room.jpg" class="card-img-top" alt="...">
+            </div>
+              <div class="card-body">
+                <h5 class="card-title">Room</h5>
+                <p class="card-text">Projekt ten pomógł mi w biegłym tworzeniu strony, a także tworzeniu multimedialnych i estetycznych aspektów takich jak slidery czy design.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-img">
+              <img src="images/dash.jpg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Project plannig and time tracking</h5>
+                <p class="card-text">W tym projekcie moim zadaniem było wykonanie strony promującej fikcyjną aplikację do planowania swojego dnia. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-img">
+              <img src="images/tindog.jpg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">TinDog</h5>
+                <p class="card-text">Bardziej humorystyczna stronka, również promująca fikcyjną apkę mającą za zadanie pomóc naszym milusińskim w odnalezieniu szczęścia ;).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+
+     <!---Whoami---->
+     <div class="container-fluid whoami">
+       <div class="row">
+
+        <div class="col-lg-4 aw">
+          <img src="images/blogger.png" width="65%">
+          </div>
+
+       
+        <div class="col-lg-8 bio">
+       <h1 id="whoami">Cześć! Jestem Karolina!</h1>
+
+       <p>Obecnie uczę się w 3 klasie technikum informatycznego. Od ponad pół roku
+        stale zgłębiam swoją wiedzę w szkole, a także po za nią, aby zrealizować swój
+        cel w zostaniu full-stack designerem. Z każdego projektu staram się
+        wyciągnąć jak najwięcej, na bieżąco uczę się nowych technik. Uczestniczę w wielu webinarach poświęconych
+        web developmencie, realizuję kursy. W marcu 2020 roku miałam okazję uczestniczyć w <i>"AI Girls Hackathon – Alice Envisions the Future"</i> organizowanego
+        przez firmę Microsoft. Wspaniale by było jeśli 
+        moglibyśmy nawiązać współpracę!
+        </p>
+       </div>
+      </div>
+    </div>
+
+     <!---Contact---->
+     <div class="container-fluid">
+       <div class="row contact">
+          <div class="col-lg-3 col-sm-6 gmail">
+          <a href="mailto:karolina.margiel@gmail.com" target="_blank" id="contact"><i class="fas fa-envelope fa-3x"></i></a>
+          </div>
+          
+          <div class="col-lg-3 col-sm-6 git">
+              <a href="https://github.com/cashal00t" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+            </div>  
+            <div class="col-lg-3 col-sm-6 art">
+              <a href="https://www.artstation.com/katoline" target="_blank"><i class="fab fa-artstation fa-3x"></i></a>
+            </div>  
+          <div class="col-lg-3 col-sm-6 lin">
+            <a href="https://www.facebook.com/ktochcekawy" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
+            </div>
+
+
+       </div>
+        
+    </div>
+
+     <!---Footer---->
+     <div class="container-fluid footer">
+
+       &copy; Web created by by cashal0t|Karolina Margielewicz 2020
+
+        
+    </div>
+    
+
+
+
+
+
+
+
+
+</body>
+</html>
