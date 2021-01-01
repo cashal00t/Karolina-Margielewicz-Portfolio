@@ -61,24 +61,31 @@
 <body>
 
     <!---Navigator-->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-            <div class="container-fluid navbar">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link" aria-current="page" href="#" id="1"><i class="fas fa-home"></i></a>
-                  <a class="nav-link" href="#skills"id="2"><i class="fas fa-code"></i></a>
-                  <a class="nav-link" href="#webs"id="3"><i class="fas fa-laptop-code"></i></a>
-                  <a class="nav-link" href="#whoami"id="4"><i class="fas fa-heart"></i></a>
-                  <a class="nav-link" href="#contact"id="5"><i class="fas fa-envelope"></i></a>
-                </div>
-              </div>
-            </div>
-          </nav>
-
-   
+    <div class="container-fluid navbar">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse row" id="navbarNav">
+        <div class="col-sm-2"></div> 
+        <div class="col-sm-2"> 
+        <a class="nav-link active" aria-current="page" href="#" id="1"><i class="fas fa-home"></i></a>
+        </div> 
+        <div class="col-sm-2"> 
+        <a class="nav-link" href="#skills"id="2"><i class="fas fa-code"></i></a>
+        </div> 
+        <div class="col-sm-2">  
+        <a class="nav-link" href="#webs"id="3"><i class="fas fa-laptop-code"></i></a>
+        </div>
+        <div class="col-sm-2"> 
+        <a class="nav-link" href="#whoami"id="4"><i class="fas fa-heart"></i></a>
+        </div> 
+        <div class="col-sm-2">  
+        <a class="nav-link" href="#contact"id="5"><i class="fas fa-envelope"></i></a>
+       </div>
+      </div>
+    </nav>
+   </div>
     
     <!---Title---->
     <div class="container-fluid title">
@@ -101,110 +108,28 @@
 
     </div>
 
-     <!---Skills---->
-     <div class="container-fluid skills">
-       <h1 id="skills">Umiejętności</h1>
-        <div class="row">
-         
-          <div class="col-lg-6">
-            <p>
-              <a class="btn btn-danger btn-block" data-toggle="collapse" href="#html" role="button" aria-expanded="false" aria-controls="collapseExample">
-                <i class="fab fa-html5 fa-2x"></i>
-              </a>
-            </p>
-            <div class="collapse" id="html">
-              <div class="card card-body">
-                <p>HTML5 znam bliżej od ponad półtora roku, o ile to możliwe korzystam ze wszystkich aspektów, które oferuje. Zwracam uwagę na SEO oraz prawidłowe korzystanie z tagów.</p> 
-          </div> 
-          </div> 
-      
-            <p>
-              <a class="btn btn-danger btn-block" data-toggle="collapse" href="#css" role="button" aria-expanded="false" aria-controls="collapseExample">
-                <i class="fab fa-css3-alt fa-2x"></i> 
-              </a>
-            </p>
-            <div class="collapse" id="css">
-              <div class="card card-body">
-                <p>Orientuję się w metodologii BEM, o ile to możliwe staram się korzystać z blokowych modułów strony. Umiem tworzyć bazowe animacje CSS. Jestem w trakcie nauki CSS Grid oraz flexbox'a, które 
-                  będę implementować w następnych projektach. </p>
-          </div> 
+         <!---Whoami---->
+         <div class="container-fluid whoami">
+          <div class="row">
+   
+           <div class="col-lg-4 aw">
+             <img src="images/blogger.png" width="65%">
+             </div>
+   
+          
+           <div class="col-lg-8 bio">
+          <h1 id="whoami">Cześć! Jestem Karolina!</h1>
+   
+          <p>Obecnie uczę się w 3 klasie technikum informatycznego. Od ponad pół roku
+           stale zgłębiam swoją wiedzę w szkole, a także po za nią, aby zrealizować swój
+           cel w zostaniu full-stack developerem. Z każdego projektu staram się
+           wyciągnąć jak najwięcej, na bieżąco uczę się nowych technik. Uczestniczę w wielu webinarach poświęconych
+           web developmencie, realizuję kursy. W marcu 2020 roku miałam okazję uczestniczyć w <i>"AI Girls Hackathon – Alice Envisions the Future"</i> organizowanego
+           przez firmę Microsoft. Wspaniale by było jeśli 
+           moglibyśmy nawiązać współpracę!
+           </p>
           </div>
-
-          <p>
-            <a class="btn btn-danger btn-block" data-toggle="collapse" href="#js" role="button" aria-expanded="false" aria-controls="collapseExample">
-              <i class="fab fa-js fa-2x"></i>
-            </a>
-          </p>
-          <div class="collapse" id="js">
-            <div class="card card-body">
-              <p>Znam podstawy JavaScriptu i potrafię wykonać proste funkcje ubogacające UX strony.</p>
-        </div> 
-        </div>
-          
-          
-
-          </div>
-          
-
-
-          <div class="col-lg-6">
-            <p>
-              <a class="btn btn-danger btn-block" data-toggle="collapse" href="#bootstrap" role="button" aria-expanded="false" aria-controls="collapseExample">
-                <i class="fab fa-bootstrap fa-2x"></i>
-              </a>
-            </p>
-            <div class="collapse" id="bootstrap">
-              <div class="card card-body">
-              <p>Bootstrap jest naprawdę przydatnym frameworkiem. Wykorzystuję go przedewszystkim przy dbaniu o responsywność strony i adaptacji na 
-              różne rozdzielczości.
-              </p>
-          </div> 
-          </div> 
-      
-            <p>
-              <a class="btn btn-danger btn-block" data-toggle="collapse" href="#wordpress" role="button" aria-expanded="false" aria-controls="collapseExample">
-                <i class="fab fa-wordpress fa-2x"></i>
-              </a>
-            </p>
-            <div class="collapse" id="wordpress">
-              <div class="card card-body">
-              Nie mam problemu również i z tworzeniem stron w Wordpressie.
-          </div> 
-          </div>
-
-          <p>
-            <a class="btn btn-danger btn-block" data-toggle="collapse" href="#python" role="button" aria-expanded="false" aria-controls="collapseExample">
-              <i class="fab fa-python fa-2x"></i>
-            </a>
-          </p>
-          <div class="collapse" id="python">
-            <div class="card card-body">
-              <p>Biorę udział w projekcie #100_days_with_code organizowanym przez London App Bewery. JEstem na etapie poznawania coraz to bardziej rozszerzonych funkcji i metod jakie oferuje Python.</p>
-        </div> 
-        </div>
-          
-          
-
-          </div>  
-          <div class="col">
-          <p>
-            <a class="btn btn-danger btn-block" data-toggle="collapse" href="#more" role="button" aria-expanded="false" aria-controls="collapseExample">
-              More
-            </a>
-          </p>
-          <div class="collapse" id="more">
-            <div class="card card-body">
-             <p>Posiadam znajomość angielskiego na poziomie B2. Wiem jak tworzyć nowe repozytoria na Githubie oraz potrafię je pobierać i uruchamiać lokalnie. Od 6 lat zajmuję się również
-              grafiką komputerową, a w szczególności digital paintingiem. Jest to raczej pasja, ale ogólna znajomość i biegłość w programach graficznych z pakietów
-              Adobe jest dość przydatną umiejętnością.
-             </p>
-        </div> 
-        </div>  
-          </div>
-
-     
-
-       </div>
+         </div>
        </div>
 
        <!---Webs---->
@@ -261,44 +186,127 @@
         
       </div>
 
-     <!---Whoami---->
-     <div class="container-fluid whoami">
+     <!---Skills---->
+     <div class="container-fluid skills">
+      <h1 id="skills">Umiejętności</h1>
        <div class="row">
+        
+         <div class="col-lg-6">
+           <p>
+             <a class="btn btn-danger btn-block" data-toggle="collapse" href="#html" role="button" aria-expanded="false" aria-controls="collapseExample">
+               <i class="fab fa-html5 fa-2x"></i>
+             </a>
+           </p>
+           <div class="collapse" id="html">
+             <div class="card card-body">
+               <p>HTML5 znam bliżej od ponad półtora roku, o ile to możliwe korzystam ze wszystkich aspektów, które oferuje. Zwracam uwagę na SEO oraz prawidłowe korzystanie z tagów.</p> 
+         </div> 
+         </div> 
+     
+           <p>
+             <a class="btn btn-danger btn-block" data-toggle="collapse" href="#css" role="button" aria-expanded="false" aria-controls="collapseExample">
+               <i class="fab fa-css3-alt fa-2x"></i> 
+             </a>
+           </p>
+           <div class="collapse" id="css">
+             <div class="card card-body">
+               <p>Orientuję się w metodologii BEM, o ile to możliwe staram się korzystać z blokowych modułów strony. Umiem tworzyć bazowe animacje CSS. Jestem w trakcie nauki CSS Grid oraz flexbox'a, które 
+                 będę implementować w następnych projektach. </p>
+         </div> 
+         </div>
 
-        <div class="col-lg-4 aw">
-          <img src="images/blogger.png" width="65%">
-          </div>
-
-       
-        <div class="col-lg-8 bio">
-       <h1 id="whoami">Cześć! Jestem Karolina!</h1>
-
-       <p>Obecnie uczę się w 3 klasie technikum informatycznego. Od ponad pół roku
-        stale zgłębiam swoją wiedzę w szkole, a także po za nią, aby zrealizować swój
-        cel w zostaniu full-stack developerem. Z każdego projektu staram się
-        wyciągnąć jak najwięcej, na bieżąco uczę się nowych technik. Uczestniczę w wielu webinarach poświęconych
-        web developmencie, realizuję kursy. W marcu 2020 roku miałam okazję uczestniczyć w <i>"AI Girls Hackathon – Alice Envisions the Future"</i> organizowanego
-        przez firmę Microsoft. Wspaniale by było jeśli 
-        moglibyśmy nawiązać współpracę!
-        </p>
+         <p>
+           <a class="btn btn-danger btn-block" data-toggle="collapse" href="#js" role="button" aria-expanded="false" aria-controls="collapseExample">
+             <i class="fab fa-js fa-2x"></i>
+           </a>
+         </p>
+         <div class="collapse" id="js">
+           <div class="card card-body">
+             <p>Znam podstawy JavaScriptu i potrafię wykonać proste funkcje ubogacające UX strony.</p>
+       </div> 
        </div>
+         
+         
+
+         </div>
+         
+
+
+         <div class="col-lg-6">
+           <p>
+             <a class="btn btn-danger btn-block" data-toggle="collapse" href="#bootstrap" role="button" aria-expanded="false" aria-controls="collapseExample">
+               <i class="fab fa-bootstrap fa-2x"></i>
+             </a>
+           </p>
+           <div class="collapse" id="bootstrap">
+             <div class="card card-body">
+             <p>Bootstrap jest naprawdę przydatnym frameworkiem. Wykorzystuję go przedewszystkim przy dbaniu o responsywność strony i adaptacji na 
+             różne rozdzielczości.
+             </p>
+         </div> 
+         </div> 
+     
+           <p>
+             <a class="btn btn-danger btn-block" data-toggle="collapse" href="#wordpress" role="button" aria-expanded="false" aria-controls="collapseExample">
+               <i class="fab fa-wordpress fa-2x"></i>
+             </a>
+           </p>
+           <div class="collapse" id="wordpress">
+             <div class="card card-body">
+             Nie mam problemu również i z tworzeniem stron w Wordpressie.
+         </div> 
+         </div>
+
+         <p>
+           <a class="btn btn-danger btn-block" data-toggle="collapse" href="#python" role="button" aria-expanded="false" aria-controls="collapseExample">
+             <i class="fab fa-python fa-2x"></i>
+           </a>
+         </p>
+         <div class="collapse" id="python">
+           <div class="card card-body">
+             <p>Biorę udział w projekcie #100_days_with_code organizowanym przez London App Bewery. Jestem na etapie poznawania coraz to bardziej rozszerzonych funkcji i metod jakie oferuje Python.</p>
+       </div> 
+       </div>
+         
+         
+
+         </div>  
+         <div class="col">
+         <p>
+           <a class="btn btn-danger btn-block" data-toggle="collapse" href="#more" role="button" aria-expanded="false" aria-controls="collapseExample">
+             More
+           </a>
+         </p>
+         <div class="collapse" id="more">
+           <div class="card card-body">
+            <p>Posiadam znajomość angielskiego na poziomie B2. Wiem jak tworzyć nowe repozytoria na Githubie oraz potrafię je pobierać i uruchamiać lokalnie. Od 6 lat zajmuję się również
+             grafiką komputerową, a w szczególności digital paintingiem. Jest to raczej pasja, ale ogólna znajomość i biegłość w programach graficznych z pakietów
+             Adobe jest dość przydatną umiejętnością.
+            </p>
+       </div> 
+       </div>  
+         </div>
+
+    
+
       </div>
-    </div>
+      </div>
+
 
      <!---Contact---->
      <div class="container-fluid">
        <div class="row contact">
-          <div class="col-lg-3 col-sm-6 gmail">
+          <div class="col-lg-3 col-sm-2 gmail">
           <a href="mailto:karolina.margiel@gmail.com" target="_blank" id="contact"><i class="fas fa-envelope fa-3x"></i></a>
           </div>
           
-          <div class="col-lg-3 col-sm-6 git">
+          <div class="col-lg-3 col-sm-2 git">
               <a href="https://github.com/cashal00t" target="_blank"><i class="fab fa-github fa-3x"></i></a>
             </div>  
-            <div class="col-lg-3 col-sm-6 art">
+            <div class="col-lg-3 col-sm-2 art">
               <a href="https://www.artstation.com/katoline" target="_blank"><i class="fab fa-artstation fa-3x"></i></a>
             </div>  
-          <div class="col-lg-3 col-sm-6 lin">
+          <div class="col-lg-3 col-sm-2 lin">
             <a href="https://www.facebook.com/ktochcekawy" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
             </div>
 
