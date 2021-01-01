@@ -38,6 +38,8 @@ h1
     width:100%;
     height:30rem;
     padding-top:6rem;
+    position:relative;
+    z-index:0
 }
 .text
 {
@@ -95,7 +97,7 @@ h1
 
 .img 
 {
-  position:absolute;
+  position:relative;
   z-index:0;
   bottom:2rem;
     -webkit-animation: img 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -140,13 +142,13 @@ h1
   }
   .aw>img 
   {
-    position:relative;
+    position:absolute;
     left:6rem;
-    padding-bottom:3rem;
+    padding-bottom:7rem;
   }
   
-
-
+ 
+  
 }
 
 
@@ -257,6 +259,8 @@ transform: translateX(150px);
   background-image: url('images/white.svg');
   padding:6rem;
   margin-right:3rem;
+  position:relative;
+  z-index:2;
 }
 .bio
 {
@@ -266,7 +270,7 @@ transform: translateX(150px);
 }
 .aw>img
 {
-  top:3rem;
+  top:4rem;
   left:6rem;
   position: relative;
 }
@@ -332,5 +336,6 @@ transform: translateX(150px);
   text-align:center;
   
 }
+
 
 
