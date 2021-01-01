@@ -259,7 +259,7 @@ transform: translateX(150px);
   background-image: url('images/white.svg');
   padding:6rem;
   margin-right:3rem;
-  position:relative;
+  position:absolute;
   z-index:2;
 }
 .bio
